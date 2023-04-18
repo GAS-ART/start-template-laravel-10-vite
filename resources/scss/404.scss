@@ -1,0 +1,57 @@
+.page-404 {
+   position: relative;
+  width: 100%;
+   min-height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   margin: 220px 0 30px 0;
+
+   @media (max-width: $mobileSmall) {
+      margin: 126px 0 20px 0;
+   }
+   &__container {
+    
+   }
+
+   &__body {
+      text-align: center;
+   }
+
+   &__tittle {
+      @include adaptiveValueREM('font-size', 180,54 );
+      margin-bottom: 15px;
+   }
+
+   &__text {
+      @include adaptiveValueREM('font-size', 40,18 );
+      margin-bottom: 30px;
+   }
+
+   &__button {
+      @include adaptiveValueREM('font-size', 30,18 );
+      color: $blue;
+      a{
+         position: relative;
+         &::after{
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0%;
+            height: 1px;
+            background: $paleBlue;
+            transition: width 0.3s ease-in-out;
+         }
+         &:hover::after{
+            width: 100%;
+         }
+      }
+      
+   }
+}
+.button {
+}
+.button-404 {
+}

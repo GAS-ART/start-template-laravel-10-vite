@@ -1,0 +1,6 @@
+@section('footer')
+<footer class="footer">
+   <div class="footer__container">
+      FOOTER
+   </div>
+</footer>
