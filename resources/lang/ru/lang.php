@@ -5,6 +5,7 @@ return [
    'ru'=>'ru',
    'current'=>'ru',
    'another'=>'ua',
+   'prefix' => 'ru',
 ]
 
 ?>
