@@ -1,10 +1,10 @@
-@extends('layout') 
+@extends('layout')
 @section('title', __('titles.home.title'))
-@section('description', __('titles.home.description')) 
-@section('ogTitle' ,__('titles.home.ogTitle')) 
-@section('ogDescription', __('titles.home.ogDescription')) 
+@section('description', __('titles.home.description'))
+@section('ogTitle' ,__('titles.home.ogTitle'))
+@section('ogDescription', __('titles.home.ogDescription'))
 @section('ogUrl', __('titles.home.ogUrl'))
-@section('page', 'home') 
+@section('page', 'home')
 
 @section('content')
 
@@ -12,6 +12,7 @@
     <div class="icons">
         <div class="icon icon-energy"></div>
     </div>
+    <button data-popup-id="main" class="main__btn link-on-popup">POPUP BUTTON</button>
     @lang('home.test')<br /><br />
     <a href="{{ route('home', ['locale' => __('lang.ua')]) }}">UA</a>
     <br /><br />
